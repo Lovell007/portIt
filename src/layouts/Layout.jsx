@@ -36,6 +36,7 @@ export default function Layout(props) {
           </p>
           <p className="rightLinks">
             <img
+              alt=""
               className="resumeImg"
               onClick={() =>
                 window.open(

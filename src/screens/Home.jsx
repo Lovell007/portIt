@@ -4,7 +4,7 @@ import headShot from '../images/IMG_20210330_210623_569_adobespark.png';
 export default function Home() {
   return (
     <div id="About" className="home">
-      <img className="headShot" src={headShot} />
+      <img className="headShot" src={headShot} alt="" />
       <div className="brandBG">
         <div className="brandStatement">
           A software engineer with a strong passion for personal development and writing the

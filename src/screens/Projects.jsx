@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="projects">
         <div>
           <a href="https://stoic-bartik-d5dba2.netlify.app/">
-            <img className="projImg" src={afts} />
+            <img className="projImg" src={afts} alt="" />
           </a>
           <div className="projDesc">
             A proof of concept project, allowing users to create a 3d planet using custom texture
@@ -23,7 +23,7 @@ export default function Projects() {
         </div>
         <div>
           <a href="https://modest-perlman-36e441.netlify.app/">
-            <img className="projImg" src={mspc} />
+            <img className="projImg" src={mspc} alt="" />
           </a>
           <div className="projDesc">
             A work in progress. Users can create playlists, play music, and find local singles with
@@ -36,7 +36,7 @@ export default function Projects() {
         </div>
         <div>
           <a href="https://pc-culture.netlify.app/">
-            <img className="projImg" src={pcCulture} />
+            <img className="projImg" src={pcCulture} alt="" />
           </a>
           <div className="projDesc">
             Find your parts and build the ultimate gaming computer at PC Culture{' '}
