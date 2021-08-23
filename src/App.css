@@ -1,38 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800;1,900&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 .App {
-  text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Projects {
+  background-image: url("images/interior-1944348.jpg");
+  height: 100vh;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
+  position: sticky; 
+  top: 0; 
+  color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(235,235,255, .8);
+  justify-content: space-between;
+  border-bottom: rgba(85,85,85, .5) solid 2px;
+  z-index: 5;
+}
+
+.name {
+  text-align: center;
+  font-size: 2.9vw;
+  padding: 1vw;
+  margin: auto;
+}
+
+.rightBar {
+  display: inline-flex;
+  padding: 1vw;
+}
+
+.leftBar {
+  display: inline-flex;
+  padding: .7vw;
+}
+
+.leftLinks {
+  padding: 0 .7vw;
+  font-size: 1.7vw;
+  font-weight: 400;
+}
+
+.rightLinks {
+  padding: 0 1.9vw 0 1vw;
+  font-size: 2.4vw;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  background-image: url("images/home-office-1867761.jpg");
+  background-size: cover;
+}
+
+.headShot {
+  width: 25vw;
+  margin: 3.8vw;
+  border: solid black 2px;
+  background-image: radial-gradient(white, black);
+}
+
+.brandStatement {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.8vw;
+  padding: 3vw;
+  margin: 0 8vw 0 0;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 8px;
+  box-shadow: 12px 12px 1px rgba(255, 255, 255, .4);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.resumeImg {
+  height: 1.8vw;
+  padding-top: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lIcons {
+  color: #0077b5;
+}
+
+.gIcons {
+  color: #193157;
+}
+
+.mission {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("images/missionBG.png");
+}
+
+#Contact {
+  background-size: 100%;
+  background-image: url("images/email.jpg");
+  border-top: black solid 3px;
+}
+
+.email {
+  padding: 1.5vw;
+  color: white;
+  text-align: center;
+  font-size: 4vw; 
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.projects {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.projImg {
+  width: 25vw;
+  border-radius: 8px;
+}
+
+.projDesc {
+  width: 25vw;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
 }
